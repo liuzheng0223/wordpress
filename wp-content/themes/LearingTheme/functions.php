@@ -1,9 +1,9 @@
 <?php 
-function learningWordpress_resources(){
-
-	wp_enqueue_style('style', get_stylesheet_uri());
+function add_stylesheet() {
+wp_register_style('bootstrap.min',get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
+wp_enqueue_style( 'bootstrap.min' );
 }
-add_action('wp_enqueue_scripts','learningWordpress_resources');
+add_action( 'wp_enqueue_scripts', 'add_stylesheet' );
 
 //Navigation Menus
 register_nav_menus(array(
