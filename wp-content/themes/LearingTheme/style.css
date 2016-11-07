@@ -7,9 +7,6 @@ Author URI: www.google.com
 Version: 1.0
 Tags: responsive, whites
 */
-@import url('bootstrap/css/bootstrap.css'); 
-@import url('bootstrap/css/bootstrap-responsive.css'); 
-
 body{
 	font-family: Arial,sans-serif;
 	font-size: 14px;

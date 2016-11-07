@@ -5,6 +5,16 @@ if (have_posts()):
 	<article class="post">
 		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		<p><?php the_content(); ?></p>
+		<?php 
+			$pathvar= $_GET["pppp"]; 
+			if(empty($pathvar)){
+				echo "XXXXXXXX";
+			} else {
+			echo $pathvar;
+			}
+			?>
+			<p>aaaa</p>
+
 	</article>
 <?php endwhile;
 	else :
